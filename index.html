@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UHKK X STUDIO</title>
+<meta name="description" content="UHKK X STUDIO — 작고 다정한 앱과 게임을 만듭니다.">
+<link rel="icon" href="assets/emblem.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #faf8f4; --surface: #ffffff; --line: #e8e3da;
+    --text: #1d1c1a; --muted: #6b665d; --accent: #b87400; --emblem-bg: #131317;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e0e11; --surface: #17171b; --line: #26262d;
+            --text: #ededf0; --muted: #9a9aa3; --accent: #f0a41c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+         line-height: 1.7; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 64px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  .emblem { width: 64px; height: 64px; border-radius: 16px; background: var(--emblem-bg);
+            display: grid; place-items: center; flex: none; }
+  .emblem svg { width: 40px; height: 40px; }
+  h1 { margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; }
+  h1 small { display: block; font-size: 15px; font-weight: 700; letter-spacing: 4px; color: var(--accent); }
+  .lead { margin: 28px 0 0; font-size: 19px; }
+  .en { color: var(--muted); font-size: 15px; font-weight: 400; }
+  h2 { margin: 48px 0 14px; font-size: 14px; font-weight: 700; letter-spacing: 1px; color: var(--muted); }
+  .app { display: flex; gap: 16px; padding: 18px; background: var(--surface);
+         border: 1px solid var(--line); border-radius: 16px; }
+  .app > div { min-width: 0; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app h3 { margin: 0; font-size: 18px; }
+  .app p { margin: 4px 0 8px; color: var(--muted); font-size: 15px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent);
+           border: 1px solid var(--accent); border-radius: 999px; padding: 1px 10px; }
+  .app .links { margin-top: 8px; font-size: 14px; }
+  a { color: var(--accent); }
+  ul { margin: 0; padding-left: 20px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="emblem" aria-hidden="true">
+      <svg viewBox="0 0 32 32"><path d="M9 8v10.2a7 7 0 0 0 14 0V8h-4.4v10.2a2.6 2.6 0 0 1-5.2 0V8H9Z" fill="#f0a41c"/></svg>
+    </div>
+    <h1>UHKK X STUDIO<small>어크크 스튜디오</small></h1>
+  </header>
+
+  <p class="lead">작고 다정한 앱과 게임을 만듭니다.<br>
+    <span class="en" lang="en">Small, warm apps and games.</span></p>
+
+  <h2>앱 · Apps</h2>
+  <div class="app">
+    <img src="assets/puppyfocus.png" alt="멍 포커스 아이콘">
+    <div>
+      <h3>멍 포커스 <span class="en" lang="en">Puppy Focus</span></h3>
+      <p>타이머를 켜면 손그림 느낌의 강아지가 곁을 지켜 주는 집중 타이머.</p>
+      <span class="badge">Android · 곧 출시</span>
+      <div class="links"><a href="https://legal.uhkk.kr/puppyfocus/privacy.html">개인정보처리방침</a></div>
+    </div>
+  </div>
+
+  <h2>개인정보처리방침 · Privacy</h2>
+  <ul>
+    <li><a href="https://legal.uhkk.kr/puppyfocus/privacy.html">멍 포커스 (Puppy Focus)</a></li>
+    <li><a href="https://legal.uhkk.kr/lotto/privacy.html">로또연 (Lottoyeon)</a></li>
+  </ul>
+
+  <footer>
+    문의 · Contact: <a href="mailto:uhkkxstudio@gmail.com">uhkkxstudio@gmail.com</a><br>
+    © 2026 UHKK X STUDIO
+  </footer>
+</main>
+</body>
+</html>
